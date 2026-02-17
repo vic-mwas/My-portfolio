@@ -24,23 +24,20 @@
 .profile {
     background: #ffffff;
     border-radius: 24px;
-    padding: 20px; /* slightly reduced */
+    padding: 0; /* remove padding */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    width: 380px;   /* was 420px */
-    height: 380px;  /* was 420px */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: inline-block; /* container wraps image */
     position: relative;
+    overflow: hidden;
 }
 
+.profile-img {
+    display: block;   /* removes small bottom spacing */
+    max-width: 100%;  /* prevents overflow */
+    height: auto;     /* keeps original aspect ratio */
+    border-radius: 24px;
+}
 
-        .profile-img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            border-radius: 16px;
-        }
     </style>
 </head>
 
