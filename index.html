@@ -24,18 +24,20 @@
 .profile {
     background: #ffffff;
     border-radius: 24px;
-    padding: 0; /* remove padding */
+    padding: 20px; /* gives breathing room */
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
-    display: inline-block; /* container wraps image */
+    width: 360px;   /* adjust if needed */
+    height: 360px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: relative;
-    overflow: hidden;
 }
 
 .profile-img {
-    display: block;   /* removes small bottom spacing */
-    max-width: 100%;  /* prevents overflow */
-    height: auto;     /* keeps original aspect ratio */
-    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* 🔥 no cropping */
 }
 
     </style>
