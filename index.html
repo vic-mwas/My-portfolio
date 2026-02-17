@@ -26,18 +26,35 @@
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
     width: 240px;
-    height: 280px; /* taller than width */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    padding: 18px 15px 20px 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
 }
 
 .profile-img {
     width: 100%;
-    height: 100%;
-    object-fit: contain; /* shows full image */
+    height: auto;
+    display: block;
+    border-radius: 16px;
+    margin-bottom: 14px;
 }
+
+.profile-name {
+    font-weight: 700;
+    font-size: 17px;
+    margin-bottom: 4px;
+}
+
+.profile-title {
+    font-size: 13px;
+    color: #6c757d;
+}
+
 
     </style>
 </head>
@@ -95,22 +112,20 @@
                 </div>
 
                 <!-- PHOTO SECTION -->
-                <div class="col-xxl-7">
-                    <div class="d-flex justify-content-center mt-5 mt-xxl-0">
-                        <div class="profile">
-                            <img class="profile-img" src="assets/vic.png" alt="Victor Mwangi" />
+<!-- PHOTO SECTION -->
+<div class="col-xxl-7">
+    <div class="d-flex justify-content-center mt-5 mt-xxl-0">
+        
+        <div class="profile">
+            <img class="profile-img" src="assets/vic.png" alt="Victor Mwangi" />
 
-                            <!-- Decorative dots stay untouched -->
-                            <div class="dots-1"></div>
-                            <div class="dots-2"></div>
-                            <div class="dots-3"></div>
-                            <div class="dots-4"></div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+            <div class="profile-name">Victor Mwangi</div>
+            <div class="profile-title">Mobile & Web App Developer</div>
         </div>
+
+    </div>
+</div>
+
     </header>
 
     <!-- About Section-->
