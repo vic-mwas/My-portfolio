@@ -19,17 +19,22 @@
     <!-- Core theme CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- ✅ CLEAN PROFESSIONAL PHOTO CONTAINER -->
+    <!--CLEAN PROFESSIONAL PHOTO CONTAINER -->
     <style>
 .profile {
     background: #ffffff;
     border-radius: 20px;
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.12);
     width: 240px;
-    padding: 18px 15px 20px 15px;
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+    display: flex;
+    flex-direction: column;  /* 🔥 forces vertical stacking */
+    align-items: center;
+    
+    overflow: hidden;
+    padding-bottom: 15px;
 }
+
 
 .profile:hover {
     transform: translateY(-6px);
@@ -40,14 +45,13 @@
     width: 100%;
     height: auto;
     display: block;
-    border-radius: 16px;
-    margin-bottom: 14px;
 }
 
+
 .profile-name {
+    margin-top: 12px;
     font-weight: 700;
     font-size: 17px;
-    margin-bottom: 4px;
 }
 
 .profile-title {
